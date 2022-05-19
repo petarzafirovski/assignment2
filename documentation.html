@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        #listItems li:hover{
+            cursor:pointer;
+            background-color:	#98FB98;
+        }
+html, body {
+  margin:0px;
+  height:100%;
+}
+
+.box {
+  background-color: whitesmoke;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <header>
+            <nav
+              class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark mb-3"
+              
+            >
+              <div  class="container">
+                <a class="navbar-brand ms-3" href="home.html">LearnReactEasy
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width="35px" height="28px" alt="">
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse mr"
+                >
+                  <partial name="_LoginPartial" />
+                  <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                      <a href="tutorials.html" class="nav-link text-info">React tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="certificate.html" class="nav-link text-light">Certificate</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="exercises.html" class="nav-link text-light">Exercises</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-light">Logout</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+    
+      <div class="container mt-5">
+       <div class="row">
+           <div class="col">
+            <div class="row" style="text-align: center">
+                <h1>Introducing JSX</h1>
+            </div>
+            <div class="row">
+                <p>Consider this variable declaration:</p>
+               <div style="background-color: black;border-radius:10px">
+                <p style="color:white">
+                    <span style="color:purple">const</span> element = &lt<span style="color:crimson">h1</span>>Hello, world!&lt/<span style="color:crimson">h1</span>>;
+                </p>
+               </div>
+            </div>
+            <div class="row">
+                <p>
+                    This funny tag syntax is neither a string nor HTML.<br><br>
+    
+    It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.<br><br>
+    
+    JSX produces React “elements”. We will explore rendering them to the DOM in the next section. Below, you can find the basics of JSX necessary to get you started.
+    
+    
+                </p>
+            </div>
+            <div class="row">
+               <div class="col"> <button class="btn-info">Next page</button></div>
+               <div class="col"></div>
+               <div class="col"></div>
+               <div class="col"></div>
+               <div class="col"></div>
+               <div class="col"></div>
+               <div class="col">
+                <a href="quiz.html" class="btn btn-success">Take a quiz</a>
+               </div>
+            </div>
+           </div>
+
+           <div class="col-sm-3" >
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Module #1
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <ul id="listItems">
+                          <li>JSX</li>
+                          <li>Components</li>
+                          <li>Hooks
+                              <ul>
+                                  <li>useState</li>
+                                  <li>useEffect</li>
+                              </ul>
+                          </li>
+                          <li>Stateless components</li>
+                          <li>Stateful components</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Module #2
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <ul id="listItems">
+                            <li>JSX</li>
+                            <li>Components</li>
+                            <li>Hooks
+                                <ul>
+                                    <li>useState</li>
+                                    <li>useEffect</li>
+                                </ul>
+                            </li>
+                            <li>Stateless components</li>
+                            <li>Stateful components</li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Module #3
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <ul id="listItems">
+                            <li>JSX</li>
+                            <li>Components</li>
+                            <li>Hooks
+                                <ul>
+                                    <li>useState</li>
+                                    <li>useEffect</li>
+                                </ul>
+                            </li>
+                            <li>Stateless components</li>
+                            <li>Stateful components</li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+       </div>
+    </div>
+
+    
+</body>
+</html>
