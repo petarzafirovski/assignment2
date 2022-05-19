@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+body{
+ background-color:#eee;
+ font-family: "Poppins", sans-serif;
+ font-weight: 300;
+}
+
+.card{
+
+ border: none;
+ 
+}
+
+.card-div{
+
+ height: 400px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #f7fbff;
+ border-bottom: 1px solid #eee;
+}
+
+
+.card-div-2{
+
+ padding:20px;
+}
+
+.search{
+position: relative;
+box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+    top: -51px;
+}
+
+.search input{
+
+ height: 60px;
+ text-indent: 25px;
+ border: 2px solid #eee;
+
+
+}
+
+
+.search input:focus{
+
+ box-shadow: none;
+ border: 2px solid blue;
+
+
+}
+
+.search .fa-search{
+
+ position: absolute;
+ top: 20px;
+ left: 16px;
+
+}
+
+.search button{
+
+ position: absolute;
+ top: 5px;
+ right: 5px;
+ height: 50px;
+ width: 110px;
+ background: blue;
+
+}
+
+.box{
+
+ border: 1px solid #eee;
+ padding: 15px;
+ cursor: pointer;
+ border-radius: 5px;
+ background-color: #e9ce9b;
+ color: #d39c36;
+}
+    </style>
+</head>
+<header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark mb-3"
+  >
+    <div class="container">
+      <a class="navbar-brand ms-3 text-info" href="home.html"
+        >LearnReactEasy
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+          width="35px"
+          height="28px"
+          alt=""
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse mr"
+      >
+        <partial name="_LoginPartial" />
+        <ul class="navbar-nav flex-grow-1">
+          <li class="nav-item">
+            <a href="tutorials.html" class="nav-link text-light"
+              >React tutorials</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="certificate.html" class="nav-link text-light"
+              >Certificate</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="exercises.html" class="nav-link text-light"
+              >Exercises</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="feedback.html" class="nav-link text-light">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" class="nav-link text-info">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link text-light">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<body>
+  <div class="container mt-5 mb-5">
+
+    <div class="row">
+
+      <div class="col-md-12">
+
+        <div class="card">
+
+
+          <div class="card-div d-flex flex-column">
+            
+              <h3 class="font-weight-bold">Frequently Asked Questions</h3>
+             
+       
+
+          </div>
+
+          
+
+
+
+          <div class="card-div-2">
+
+            <div class="px-1">
+              
+              <div class="search">
+            
+                <i class="fa fa-search"></i>
+                <input type="text" class="form-control" placeholder="Have a question? Ask Now">
+                <button class="btn btn-primary">Search</button>
+
+              </div>
+
+            </div>
+
+            <div class="px-1 mb-2">
+
+              <div class="box d-flex justify-content-between align-items-center">
+
+                <div>
+                  <i class="fa fa-file"></i>
+                  <span>How to configure visual studio code for react?</span>
+                </div>
+
+                <i class="fa fa-plus"></i>
+                
+
+              </div>
+              
+
+            </div>
+
+            <div class="px-1 mb-2">
+
+              <div class="box d-flex justify-content-between align-items-center">
+
+                <div>
+                  <i class="fa fa-file"></i>
+                  <span>What node version should I download?</span>
+                </div>
+
+                <i class="fa fa-plus"></i>
+                
+
+              </div>
+              
+
+            </div>
+
+
+
+            <div class="px-1 mb-2">
+
+              <div class="box d-flex justify-content-between align-items-center">
+
+                <div>
+                  <i class="fa fa-file"></i>
+                  <span>What is better, classful or functional components?</span>
+                </div>
+
+                <i class="fa fa-plus"></i>
+                
+
+              </div>
+              
+
+            </div>
+
+
+
+            <div class="px-1 mb-2">
+
+              <div class="box d-flex justify-content-between align-items-center">
+
+                <div>
+                  <i class="fa fa-file"></i>
+                  <span>How to test components that use Hooks?</span>
+                </div>
+
+                <i class="fa fa-plus"></i>
+                
+
+              </div>
+              
+
+            </div>
+
+
+
+          </div>
+
+
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+
+  </div>
+</body>
+</html>

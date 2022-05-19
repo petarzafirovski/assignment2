@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <title>Document</title>
+    <style>
+        .navbar-nav{
+    width: 100%;
+}
+
+@media(min-width:568px){
+    .end{
+        margin-left: auto;
+    }
+}
+
+@media(max-width:768px){
+    #post{
+        width: 100%;
+    }
+}
+#clicked{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    width: 100%;
+    background-color: #ecb21f;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: whitesmoke;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 13px; 
+}
+
+#profile{
+    background-color: unset;
+    
+} 
+
+#post{
+    margin: 10px;
+    padding: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    background-color: #ecb21f;
+    border-color: #a88734 #9c7e31 #846a29;
+    
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 13px;
+    width: 50%;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#nav-items li a,#profile{
+    text-decoration: none;
+    color: rgb(224, 219, 219);
+    background-color: whitesmoke;
+}
+
+
+.comments{
+    margin-top: 5%;
+    margin-left: 20px;
+}
+
+.darker{
+    border: 1px solid #ecb21f;
+    background-color: whitesmoke;
+    float: right;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+.comment{
+    border: 1px solid rgba(16, 46, 46, 1);
+    background-color: rgba(16, 46, 46, 0.973);
+    float: left;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 10px;
+    
+}
+.comment h4,.comment span,.darker h4,.darker span{
+    display: inline;
+}
+
+.comment p,.comment span,.darker p,.darker span{
+    color: rgb(184, 183, 183);
+}
+
+h1,h4{
+    color: whitesmoke;
+    font-weight: bold;
+}
+label{
+    color: rgb(212, 208, 208);
+}
+
+#align-form{
+    margin-top: 20px;
+}
+.form-group p a{
+    color: whitesmoke;
+}
+
+#checkbx{
+    background-color: whitesmoke;
+}
+
+#darker img{
+    margin-right: 15px;
+    position: static;
+}
+
+.form-group input,.form-group textarea{
+    background-color: whitesmoke;
+    border: 1px solid rgba(16, 46, 46, 1);
+    border-radius: 12px;
+}
+
+form{
+    border: 1px solid rgba(16, 46, 46, 1);
+    background-color: rgba(16, 46, 46, 0.973);
+    border-radius: 5px;
+    padding: 20px;
+ }
+    </style>
+</head>
+<body>
+    <header>
+        <nav
+          class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark mb-3"
+        >
+          <div class="container">
+            <a class="navbar-brand ms-3 text-info" href="home.html"
+              >LearnReactEasy
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                width="35px"
+                height="28px"
+                alt=""
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse mr"
+            >
+              <partial name="_LoginPartial" />
+              <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                  <a href="tutorials.html" class="nav-link text-light"
+                    >React tutorials</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="certificate.html" class="nav-link text-light"
+                    >Certificate</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="exercises.html" class="nav-link text-light"
+                    >Exercises</a
+                  >
+                </li>
+                <li class="nav-item">
+                    <a href="feedback.html" class="nav-link text-info">Feedback</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="faq.html" class="nav-link text-light">FAQ</a>
+                  </li>
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link text-light">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <!-- Main Body -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 col-md-6 col-12 pb-4">
+                    <h1>Comments</h1>
+                    <div class="comment mt-4 text-justify float-left">
+                        <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" width="40" height="40">
+                        <h4>Jhon Doe</h4>
+                        <span>- 20 May, 2020</span>
+                        <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                    </div>
+                    <div class="text-justify darker mt-4 float-right">
+                        <img src="https://i.imgur.com/CFpa3nK.jpg" alt="" class="rounded-circle" width="40" height="40">
+                        <h4>Rob Simpson</h4>
+                        <span>- 20 May, 2020</span>
+                        <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                    </div>
+                    <div class="comment mt-4 text-justify">
+                        <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" width="40" height="40">
+                        <h4>Jhon Doe</h4>
+                        <span>- 20 May, 2020</span>
+                        <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                    </div>
+                    <div class="darker mt-4 text-justify">
+                        <img src="https://i.imgur.com/CFpa3nK.jpg" alt="" class="rounded-circle" width="40" height="40">
+                        <h4>Rob Simpson</h4>
+                        <span>- 20 May, 2020</span>
+                        <br>
+                        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-5">
+                    <form id="algin-form">
+                        <div class="form-group">
+                            <h4>Leave a comment</h4>
+                            <label for="message">Message</label>
+                            <textarea name="msg" id=""msg cols="30" rows="5" class="form-control" style="background-color:aliceblue;"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="fullname" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="form-control">
+                        </div>
+
+                        <div class="form-inline">
+                            <input type="checkbox" name="check" id="checkbx" class="mr-1">
+                            <label for="subscribe">Subscribe me to the newlettter</label>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" id="post" class="btn">Post Comment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
